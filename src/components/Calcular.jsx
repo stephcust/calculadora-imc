@@ -1,11 +1,18 @@
-export default function Calcular (props) {
+import React from 'react';
 
-    const calc=()=>{
-      props.setRes(props.peso / (props.alt * props.alt));
-    }
+export default class Calcular extends React.Component {
+  // eslint-disable-next-line no-useless-constructor
+  constructor(props) {
+    super(props);
+  }
+  calc = () => {
+    this.props.setRes(this.props.peso / (this.props.alt * this.props.alt));
+  }
+  render() {
     return (
       <div>
-        <button onClick={calc}>Calcular</button>
+        <button onClick={this.calc}>Calcular</button>
       </div>
     )
+  }
 }

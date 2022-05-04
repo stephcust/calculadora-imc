@@ -1,6 +1,10 @@
-export default function Tabela() {
+import React from 'react'
+
+export default class Tabela extends React.Component{
+
+  render() {
     return (
-      <table border='1' style={{borderCollapse:'collapse'}}>
+      <table border='1' style={{ borderCollapse: 'collapse' }}>
         <thead>
           <tr>
             <th>Classificação</th><th>IMC</th>
@@ -35,3 +39,4 @@ export default function Tabela() {
       </table>
     )
   }
+}
