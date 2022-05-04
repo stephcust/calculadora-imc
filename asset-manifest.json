@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/calculadora-imc/static/js/main.51c06d15.js",
+    "static/js/787.6e1697bb.chunk.js": "/calculadora-imc/static/js/787.6e1697bb.chunk.js",
+    "index.html": "/calculadora-imc/index.html",
+    "main.51c06d15.js.map": "/calculadora-imc/static/js/main.51c06d15.js.map",
+    "787.6e1697bb.chunk.js.map": "/calculadora-imc/static/js/787.6e1697bb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.51c06d15.js"
+  ]
+}
