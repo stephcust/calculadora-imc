@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import FormAltura from './components/FormAltura';
+import FormPeso from './components/FormPeso';
+import Tabela from './components/Tabela';
+import Calcular from './components/Calcular';
+import Resultado from './components/Resultado';
+
 
 function App() {
+  const [peso, setPeso] = useState(0);
+  const [altura, setAltura] = useState(0);
+  const [resultado, setResultado] = useState(0);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <FormPeso p={peso} sp={setPeso}/>
+      <FormAltura a={altura} sa={setAltura}/>
+      <Calcular peso={peso} alt={altura} setRes={setResultado}/>
+      <Resultado res={resultado}/>
+      <Tabela/>
+    </>
   );
 }
 
